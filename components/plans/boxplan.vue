@@ -1,5 +1,8 @@
 <template>
-  <div class="d-flex flex-wrap justify-center ga-4 py-10">
+  <div
+    class="d-flex flex-wrap justify-center ga-4 py-10"
+    style="overflow: visible"
+  >
     <v-card
       v-for="(itens, index) in plans"
       :key="index"
@@ -8,18 +11,28 @@
       max-width="282"
       min-height="480"
       rounded="xl"
+      style="overflow: visible"
     >
+      <!-- Chip de destaque para plano popular -->
       <v-chip
-        v-if="itens.id === 4"
+        v-if="itens.popular"
         color="deep-purple-accent-4"
         text-color="white"
         class="position-absolute"
-        style="top: -12px; left: 50%; transform: translateX(-50%); z-index: -1"
+        style="
+          top: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 3;
+          padding: 2px 50px;
+        "
         label
         size="small"
+        elevation="2"
       >
         Mais popular
       </v-chip>
+
       <v-card-text class="flex-grow-1 d-flex flex-column">
         <div class="text-subtitle-1 font-weight-medium text-primary">
           {{ itens.name }}
@@ -34,7 +47,6 @@
 
         <v-divider class="my-4"></v-divider>
 
-        <!-- Espaço reservado para benefícios -->
         <div class="flex-grow-1">
           <ul class="text-start text-body-2 px-4">
             <li
@@ -82,6 +94,7 @@ export default {
           price: "R$ 144,38/mês",
           annualPrice: "R$ 1.732,56/ano",
           description: "Soluções corporativas completas e integradas",
+          popular: true,
           benefits: [
             "Customização total",
             "Gerente de conta dedicado",
@@ -94,7 +107,6 @@ export default {
           price: "R$ 116,88/mês",
           annualPrice: "R$ 1.402,56/ano",
           description: "Para empresas que precisam de segurança e controle",
-          popular: true,
           benefits: [
             "Acesso completo",
             "Monitoramento avançado",

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container style="overflow: visible;">
     <ComplementsToggle @update="toggleValue = $event" />
     <PlansBoxplan :isAnnual="toggleValue" />
     <ComplementsTables />

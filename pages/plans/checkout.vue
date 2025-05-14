@@ -1,5 +1,6 @@
 <template>
   <div class="checkout-bg">
+    <p style="min-height: 90vh"></p>
     <CheckoutModal
       v-model="dialog"
       :plan="plan"
