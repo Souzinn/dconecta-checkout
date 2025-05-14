@@ -1,0 +1,33 @@
+name: CI - Nuxt 3
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup do Node.js (v22.15.0)
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22.15.0"
+          cache: "npm"
+
+      - name: 📦 Instalar dependências
+        run: npm ci
+
+      - name: 🧪 Rodar testes
+        run: npm run test # Altere para o script correto se necessário
+
+      - name: 🧹 Rodar lint (opcional)
+        run: npm run lint # Remova se não estiver usando lint
+
+      - name: 🏗️ Build da aplicação
+        run: npm run build
