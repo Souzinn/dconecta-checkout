@@ -26,7 +26,7 @@
           <!-- Coluna Direita -->
 
           <v-col cols="12" md="6" class="pa-10">
-            <CheckoutPagamento :rawPrice="rawPrice" />
+            <CheckoutPayment :rawPrice="rawPrice" />
           </v-col>
         </v-row>
       </v-container>
