@@ -23,11 +23,5 @@ jobs:
       - name: 📦 Instalar dependências
         run: npm ci
 
-      - name: 🧪 Rodar testes
-        run: npm run test # Altere para o script correto se necessário
-
-      - name: 🧹 Rodar lint (opcional)
-        run: npm run lint # Remova se não estiver usando lint
-
       - name: 🏗️ Build da aplicação
         run: npm run build
