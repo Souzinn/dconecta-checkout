@@ -44,7 +44,7 @@ watch(
 
 async function fetchPlan() {
   const res = await fetch(
-    `http://localhost:3001/api/plan/${planId.value}?isAnnual=${isAnnual.value}`
+    `https://dconecta-back.onrender.com/api/plan/${planId.value}?isAnnual=${isAnnual.value}`
   );
   plan.value = await res.json();
 }
