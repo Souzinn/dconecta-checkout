@@ -2,7 +2,6 @@
 
 ![Tech Stack](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
 ![Nuxt](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vuetify](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white)
 
 Bem-vindo ao projeto de checkout de planos mais incrível que você já viu! Este é um sistema completo de seleção e pagamento de planos construído com as melhores tecnologias modernas.
@@ -85,7 +84,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 Equipe de Desenvolvimento - [victorsouza350@outlook.com](mailto:victorsouza350@outlook.com)
 
-Link do Projeto: [https://github.com/Souzinn/dconecta-checkout](https://github.com/Souzinn/dconecta-checkout)
+Link do Projeto: [https://dconecta-checkout.vercel.app/plans/pricing](https://dconecta-checkout.vercel.app/plans/pricing)
 
 ---
 
