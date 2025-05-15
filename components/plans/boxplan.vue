@@ -92,7 +92,7 @@ export default {
           id: 4,
           name: "Enterprise",
           price: "R$ 144,38/mês",
-          annualPrice: "R$ 1.732,56/ano",
+          annualPrice: "R$ 139,56/ano",
           description: "Soluções corporativas completas e integradas",
           popular: true,
           benefits: [
@@ -105,7 +105,7 @@ export default {
           id: 3,
           name: "Security",
           price: "R$ 116,88/mês",
-          annualPrice: "R$ 1.402,56/ano",
+          annualPrice: "R$ 109,56/ano",
           description: "Para empresas que precisam de segurança e controle",
           benefits: [
             "Acesso completo",
@@ -117,7 +117,7 @@ export default {
           id: 2,
           name: "Standard",
           price: "R$ 37,38/mês",
-          annualPrice: "R$ 448,56/ano",
+          annualPrice: "R$ 32,56/ano",
           description: "Para equipes em crescimento",
           benefits: ["Acesso completo", "Suporte prioritário"],
         },
