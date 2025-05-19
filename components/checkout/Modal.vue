@@ -1,4 +1,3 @@
-<!-- components/checkout/CheckoutModal.vue -->
 <template>
   <v-dialog
     :model-value="modelValue"

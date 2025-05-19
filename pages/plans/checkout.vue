@@ -1,5 +1,5 @@
 <template>
-  <div class="checkout-bg">
+  <div>
     <p style="min-height: 90vh"></p>
     <CheckoutModal
       v-model="dialog"
@@ -12,9 +12,6 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch, computed } from "vue";
-import { useRoute, useRouter } from "vue-router";
-
 const route = useRoute();
 const router = useRouter();
 
@@ -24,10 +21,11 @@ const plan = ref(null);
 const planId = ref(Number(route.query.plan));
 const isAnnual = ref(route.query.isAnnual === "true");
 
+//modal só abre caso passe o planoId na query e só exibe depois de chamar
 onMounted(async () => {
   if (planId.value) {
-    dialog.value = true;
     await fetchPlan();
+    dialog.value = true;
   }
 });
 
