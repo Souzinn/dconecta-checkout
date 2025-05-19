@@ -14,7 +14,6 @@
       placeholder="1234 1234 1234 1234"
       variant="outlined"
       class="mb-3"
-      v-mask="'#### #### #### ####'"
       :rules="[rules.required, rules.cardNumber]"
     />
     <v-row dense class="mb-3">
@@ -24,7 +23,6 @@
           label="MM / AA"
           placeholder="08 / 26"
           variant="outlined"
-          v-mask="'## / ##'"
           :rules="[rules.required]"
         />
       </v-col>
@@ -34,7 +32,6 @@
           label="CVC"
           placeholder="123"
           variant="outlined"
-          v-mask="'###'"
           :rules="[rules.required]"
         />
       </v-col>
@@ -50,9 +47,7 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
-
-const form = defineModel();
+const form = defineModel(); // esse model é ideal para quando for enviar para o validador externo ou algo assim
 
 const rules = {
   required: (v) => !!v || "Campo obrigatório",
